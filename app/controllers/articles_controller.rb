@@ -6,6 +6,9 @@ class ArticlesController < ApplicationController
         @title = article.title
         @desc = article.description
     end
-
+     
+    def index
+        @articles = Article.all
+    end
     
 end
